@@ -1,0 +1,25 @@
+// Base
+@import "./base/reset";
+@import "./base/_typography";
+@import "./base/commont";
+
+// utils
+@import "./utils/variables";
+
+// Layout
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/footer";
+
+// Plages
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/destinations";
+@import "./pages/blog";
+@import "./pages/pages";
+
+// Components
+@import "./components/button";
+
+

@@ -1,0 +1,65 @@
+.operator {
+    margin-top: 940px;
+    .operator-content{
+        h4 {
+            color: $color-1;
+            font-family: Inter;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 3.2rem;
+        }
+        h1 {
+            color: $typography-1;
+            font-size: 6.2rem;
+            font-weight: 700;
+            line-height: 7rem;
+            padding-top: 10px;
+        }
+        p{
+            color: $typography-2;
+            font-family: Inter;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            padding-top: 20px;
+        }
+    }
+}
+
+
+.tour-guides {
+    margin-top: 140px;
+    .tour-guides__info {
+        text-align: center;
+        h2 {
+            color: $typography-1;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 5rem;
+        }
+    }
+    .tour-guides__list {
+        margin-top: 60px;
+        .guides-item__content {
+            padding-top: 20px;
+            .guides-content__info {
+                h6 {
+                    color: $typography-1;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    line-height: 3rem;
+                }
+                span {
+                    color: $typography-2;
+                    font-family: Inter;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 2rem;
+                }
+            }
+            .guides-content__social {
+                color: $typography-2;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.banner-tour {
+    background: url(/imgs/banner-blog.png) center/contain no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: $typography-1;
+        text-align: center;
+        font-size: 6.2rem;
+        font-weight: 700;
+        line-height: 7rem; 
+    }
+}
+
+.pages {
+    margin-top: 100px;
+    .pages-list {
+        flex-wrap: wrap;
+        gap: 40px;
+        .pages-items {
+            background: url(/imgs/indonesia.png) center/contain no-repeat;
+            width: 565px;
+            height: 473px;
+            display: flex;
+            flex-direction: column-reverse;
+            .pages-item__content {
+                background-color: #ECECEC;
+                border-radius: 0px 0px 10px 10px;
+                padding: 30px;
+                h2 {
+                    color: $typography-1;
+                    font-size: 4rem;
+                    font-weight: 600;
+                    line-height: 5rem;
+                }
+                .pages-product {
+                    flex-direction: column-reverse;
+                    align-items: end;
+                    h4 {
+                        color: $typography-1;
+                        font-family: Inter;
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        line-height: 3.2rem;
+                    }
+                    span {
+                        color: $typography-2;
+                        text-align: right;
+                        font-family: Inter;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        line-height: 2.6rem; 
+                    }
+                }
+            }
+        }
+
+        
+    
+    }
+
+}

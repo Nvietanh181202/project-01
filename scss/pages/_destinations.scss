@@ -1,0 +1,20 @@
+.destinations-list {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 940px;
+    .destinations-item {
+        width: 16.6667%;
+        flex-direction: column-reverse;
+        align-items: start;
+
+        h4 {
+            color: $typography-1;
+            font-family: Inter;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 3.2rem;
+            padding-top: 20px;
+        }
+    }
+}

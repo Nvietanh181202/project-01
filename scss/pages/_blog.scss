@@ -1,0 +1,103 @@
+.banner-blog {
+    background: url(/imgs/banner-blog.png) center/contain no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: $typography-1;
+        text-align: center;
+        font-size: 6.2rem;
+        font-weight: 700;
+        line-height: 7rem; 
+    }
+}
+
+.travel-info {
+    .travel-blog__item {
+        h2 {
+            color: $typography-1;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 5rem;
+            padding-top: 24px;
+        }
+    }
+    .travel-blog__recent {
+        width: 488px;
+        height: 540px;
+        background: #ECECEC;
+        border-radius: 10px;
+        padding: 30px 30px 44px;
+
+        input {
+            border: 1px solid  #ECECEC;
+            flex-grow: 1;
+            border-radius: 8px;
+            padding: 14px 20px;
+            margin-right: 20px;
+
+            &:focus-visible {
+                border: 1px solid #ccc;
+            }
+        }
+    }
+
+}
+
+.blog-recent__head {
+    h4 {
+        color: $typography-1;
+        font-family: Inter;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 3.2rem;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+}
+
+.blog-recent__list {
+    flex-wrap: wrap;
+    gap: 20px;
+    .blog-recent__item {
+        justify-content: start;
+        gap: 20px;
+        span {
+            color: $typography-1;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 3rem;
+        }
+    }
+}
+
+
+.blog-content {
+    margin-top: 112px;
+    .blog-list {
+        flex-wrap: wrap;
+        gap: 30px;
+        h4 {
+            color: $typography-1;
+            font-family: Inter;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 3.2rem;
+            padding-top: 20px;
+        }
+        p {
+            color: $typography-2;
+            font-family: Inter;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.6rem;
+            margin-top: 16px;
+        }
+
+        .blog-items:hover {
+            transform: translateY(-10px);
+        }
+    }
+
+}

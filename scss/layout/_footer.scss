@@ -1,0 +1,125 @@
+.footer-subcribe {
+  background: url(/imgs/base-footer.png) center/contain no-repeat;
+  width: 1170px;
+  height: 349px;
+  position: relative;
+  margin: 184px auto 0;
+  .footer-subcribe__triagle{
+    position: absolute;
+    top: -23px;
+    left: 82px;
+  }
+  .footer-subcribe__content{
+    text-align: center;
+    padding-top: 70px;
+    h2 {
+      color: #FFF;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 5rem
+    }
+    span {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.6rem; 
+      padding-top: 6px;
+    }
+    form {
+      padding-top: 40px;
+      input {
+        width: 38%;
+        padding: 23px;
+        border-radius: 12px;
+        border: none;
+      }
+      .btn-send {
+        background-color: #F66F4D;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 32%;
+        bottom: 25%;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+  }
+  .footer-subcribe__circle {
+    float: right;
+    padding-right: 139px;
+  }
+}
+
+.footer-columns {
+    align-items: normal;
+    border-bottom: 1px solid rgba(210, 208, 192, 0.21);
+    padding-bottom: 40px;
+    margin-top: 140px;
+  }
+  
+  .column-link h5 {
+    color: #020000;
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.6rem;
+  }
+  
+  .column-items {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 23px;
+  }
+  
+  .column-items a {
+    color: #676A6C;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 3.8rem;
+
+    &:hover {
+        opacity: 0.7    ;
+    }
+  }
+
+  .footer-bottom {
+    align-items: start;
+    padding-top: 45px;
+    .footer-nav {
+        gap: 34px;
+        padding-bottom: 50px;
+        
+        li a {
+          color: #6A6F77;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 1.6rem;
+        }
+
+        & a:hover {
+            opacity: 0.6;
+        }
+    }
+    .footer-social {
+        align-items: center;
+        gap: 20px;
+        .footer-social__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            border: 1px solid #bcbcbc;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+  }

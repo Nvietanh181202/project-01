@@ -1,0 +1,21 @@
+@media (max-width: 1400px) {
+  .hide-on-pc {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-on-moblile {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+}
