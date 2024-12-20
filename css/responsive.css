@@ -4,8 +4,11 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .hide-on-tablet {
+    display: none;
+  }
+  .hero-achievement {
     display: none;
   }
 }

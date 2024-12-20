@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Travel</title>
+    <link rel="icon" href="./imgs/favicon_io/favicon.ico" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -12,19 +13,20 @@
   </head>
   <body>
     <header class="header d-flex">
-      <div class="container d-flex">
-        <div class="header-logo">
-          <a href="#">
+      <div class="container-fluid d-flex">
+        <a href="#">
+          <div class="header-logo d-flex">
             <img src="./imgs/logo.png" alt="logo" />
-          </a>
-        </div>
-        <nav class="navigation">
+            <p>Safe Tour <span>.</span></p>
+          </div>
+        </a>
+        <nav class="navigation hide-on-tablet">
           <ul>
             <li>
               <a href="/home.html">Home</a>
             </li>
             <li>
-              <a class="active" href="/about.html">About</a>
+              <a class="active" href="#">About</a>
             </li>
             <li>
               <a href="/destinations.html">Destinations</a>
@@ -190,26 +192,6 @@
                   </div>
                 </div>
               </div>
-              <div class="tour-guides__item">
-                <img src="./imgs/about-imgs2.png" alt="Tour Guides" />
-                <div class="guides-item__content d-flex">
-                  <div class="guides-content__info">
-                    <h6>Hasan Ahmed</h6>
-                    <span>Adventure master</span>
-                  </div>
-                  <div class="guides-content__social">
-                    <a href="#!">
-                      <i class="bx bxl-facebook"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="bx bxl-twitter"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="bx bxl-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
         </div>
@@ -218,138 +200,142 @@
 
     <footer>
       <div class="container">
-        <div class="footer-subcribe">
-          <div class="footer-subcribe__triagle">
-            <img src="./imgs/polygon-footer.svg" alt="polygon" />
-          </div>
-          <div class="footer-subcribe__content">
-            <h2>Subscribe our newsletter</h2>
-            <span>
-              Reciev latest news, update, and many other things
-              <br />
-              every week.
-            </span>
-            <form>
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter Your email address"
-              />
-              <button class="btn-send">
-                <i class="bx bx-paper-plane"></i>
-              </button>
-            </form>
+        <div class="row">
+          <div class="footer-subcribe">
+            <div class="footer-subcribe__triagle">
+              <img src="./imgs/polygon-footer.svg" alt="polygon" />
+            </div>
+            <div class="footer-subcribe__content">
+              <h2>Subscribe our newsletter</h2>
+              <span>
+                Reciev latest news, update, and many other things
+                <br />
+                every week.
+              </span>
+              <form>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter Your email address"
+                />
+                <button class="btn-send">
+                  <i class="bx bx-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="footer-subcribe__circle">
+              <img src="./imgs/ellipse.png" alt="ellipse" />
+            </div>
           </div>
 
-          <div class="footer-subcribe__circle">
-            <img src="./imgs/ellipse.png" alt="ellipse" />
+          <div class="footer-columns d-flex">
+            <div class="column-link">
+              <h5>Resources</h5>
+              <ul class="column-items d-flex">
+                <li>
+                  <a href="#!">Download </a>
+                </li>
+                <li>
+                  <a href="#!">Help Center</a>
+                </li>
+                <li>
+                  <a href="#!">Guide Book</a>
+                </li>
+                <li>
+                  <a href="#!">App Directory</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column-link">
+              <h5>Travellers</h5>
+              <ul class="column-items flex">
+                <li>
+                  <a href="#!">Why Travellers </a>
+                </li>
+                <li>
+                  <a href="#!">Enterprice</a>
+                </li>
+                <li>
+                  <a href="#!">Customer Stories</a>
+                </li>
+                <li>
+                  <a href="#!">Instagram post</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column-link">
+              <h5>Company</h5>
+              <ul class="column-items flex">
+                <li>
+                  <a href="#!">Travelling </a>
+                </li>
+                <li>
+                  <a href="#!">About Locato</a>
+                </li>
+                <li>
+                  <a href="#!">Success</a>
+                </li>
+                <li>
+                  <a href="#!">Information</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column-link">
+              <h5>Get in Touch</h5>
+              <ul class="column-items d-flex">
+                <li>
+                  <a href="#!"
+                    >Feel free to get in touch with <br />
+                    us vai email</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:email@gmail.com">email@gmail.com</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="footer-columns d-flex">
-          <div class="column-link">
-            <h5>Resources</h5>
-            <ul class="column-items d-flex">
-              <li>
-                <a href="#!">Download </a>
-              </li>
-              <li>
-                <a href="#!">Help Center</a>
-              </li>
-              <li>
-                <a href="#!">Guide Book</a>
-              </li>
-              <li>
-                <a href="#!">App Directory</a>
-              </li>
-            </ul>
-          </div>
-          <div class="column-link">
-            <h5>Travellers</h5>
-            <ul class="column-items flex">
-              <li>
-                <a href="#!">Why Travellers </a>
-              </li>
-              <li>
-                <a href="#!">Enterprice</a>
-              </li>
-              <li>
-                <a href="#!">Customer Stories</a>
-              </li>
-              <li>
-                <a href="#!">Instagram post</a>
-              </li>
-            </ul>
-          </div>
-          <div class="column-link">
-            <h5>Company</h5>
-            <ul class="column-items flex">
-              <li>
-                <a href="#!">Travelling </a>
-              </li>
-              <li>
-                <a href="#!">About Locato</a>
-              </li>
-              <li>
-                <a href="#!">Success</a>
-              </li>
-              <li>
-                <a href="#!">Information</a>
-              </li>
-            </ul>
-          </div>
-          <div class="column-link">
-            <h5>Get in Touch</h5>
-            <ul class="column-items d-flex">
-              <li>
-                <a href="#!"
-                  >Feel free to get in touch with <br />
-                  us vai email</a
-                >
-              </li>
-              <li>
-                <a href="mailto:email@gmail.com">email@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom d-flex">
-          <div class="footer-logo">
+          <div class="footer-bottom d-flex">
             <a href="#">
-              <img src="./imgs/logo.png" alt="logo" />
+              <div class="footer-logo d-flex">
+                <img src="./imgs/logo.png" alt="logo" />
+                <p>Safe Tour <span>.</span></p>
+              </div>
             </a>
-          </div>
-          <ul class="footer-nav d-flex">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="/about.html">About</a>
-            </li>
-            <li>
-              <a href="/destinations.html">Destinations</a>
-            </li>
-            <li>
-              <a href="/pages.html">Tours</a>
-            </li>
-            <li>
-              <a href="/blog.html">Blog</a>
-            </li>
-          </ul>
-          <div class="footer-social d-flex">
-            <div class="footer-social__item">
-              <a href="#!">
-                <i class="bx bxl-facebook"></i>
-              </a>
-            </div>
-            <div class="footer-social__item">
-              <a href="#!">
-                <i class="bx bxl-instagram-alt"></i>
-              </a>
-            </div>
-            <div class="footer-social__item">
-              <a href="#!">
-                <i class="bx bxl-twitter"></i>
-              </a>
+            <ul class="footer-nav d-flex">
+              <li>
+                <a href="/home.html">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="/destinations.html">Destinations</a>
+              </li>
+              <li>
+                <a href="/pages.html">Tours</a>
+              </li>
+              <li>
+                <a href="/blog.html">Blog</a>
+              </li>
+            </ul>
+            <div class="footer-social d-flex">
+              <div class="footer-social__item">
+                <a href="#!">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </div>
+              <div class="footer-social__item">
+                <a href="#!">
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+              </div>
+              <div class="footer-social__item">
+                <a href="#!">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

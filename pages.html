@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Travel</title>
+    <link rel="icon" href="./imgs/favicon_io/favicon.ico" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -12,13 +13,14 @@
   </head>
   <body>
     <header class="header d-flex">
-      <div class="container d-flex">
-        <div class="header-logo">
-          <a href="#">
+      <div class="container-fluid d-flex">
+        <a href="#">
+          <div class="header-logo d-flex">
             <img src="./imgs/logo.png" alt="logo" />
-          </a>
-        </div>
-        <nav class="navigation">
+            <p>Safe Tour <span>.</span></p>
+          </div>
+        </a>
+        <nav class="navigation hide-on-tablet">
           <ul>
             <li>
               <a href="/home.html">Home</a>
@@ -33,7 +35,7 @@
               <a href="/blog.html">Blog</a>
             </li>
             <li>
-              <a class="active" href="/pages.html">Pages</a>
+              <a class="active" href="#">Pages</a>
             </li>
           </ul>
         </nav>
@@ -44,210 +46,244 @@
     </header>
 
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="banner-tour">
-            <h1>Tour</h1>
-          </div>
-          <section class="search-list d-flex">
-            <div class="search-item">
-              <h5>Location</h5>
-              <span>
-                Bali, Indonesia
-                <i class="bx bx-chevron-down"></i>
-              </span>
-            </div>
-            <div class="search-item">
-              <h5>City</h5>
-              <span>
-                Prambanan
-                <i class="bx bx-chevron-down"></i>
-              </span>
-            </div>
-            <div class="search-item">
-              <h5>Guest</h5>
-              <span>
-                8 Persons
-                <i class="bx bx-chevron-down"></i>
-              </span>
-            </div>
-            <div class="btn btn-search">
-              <a href="#!">
-                <i class="bx bx-search"></i>
-                Search
-              </a>
-            </div>
-          </section>
-
-          <section class="pages">
-            <div class="pages-list d-flex">
-              <div class="pages-items">
-                <div class="pages-item__content d-flex">
-                  <h2>Indonesia</h2>
-                  <div class="pages-product d-flex">
-                    <h4>$6,500</h4>
-                    <span>9 days</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pages-items">
-                <div class="pages-item__content d-flex">
-                  <h2>Indonesia</h2>
-                  <div class="pages-product d-flex">
-                    <h4>$6,500</h4>
-                    <span>9 days</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pages-items">
-                <div class="pages-item__content d-flex">
-                  <h2>Indonesia</h2>
-                  <div class="pages-product d-flex">
-                    <h4>$6,500</h4>
-                    <span>9 days</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pages-items">
-                <div class="pages-item__content d-flex">
-                  <h2>Indonesia</h2>
-                  <div class="pages-product d-flex">
-                    <h4>$6,500</h4>
-                    <span>9 days</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pages-items">
-                <div class="pages-item__content d-flex">
-                  <h2>Indonesia</h2>
-                  <div class="pages-product d-flex">
-                    <h4>$6,500</h4>
-                    <span>9 days</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pages-items">
-                <div class="pages-item__content d-flex">
-                  <h2>Indonesia</h2>
-                  <div class="pages-product d-flex">
-                    <h4>$6,500</h4>
-                    <span>9 days</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
+      <div class="banner-tour">
+        <h1>Tour</h1>
       </div>
+      <section class="search-list d-flex">
+        <div class="search-item d-flex">
+          <label class="search-name" for="locations">Location</label>
+          <select class="list-item__tour" id="locations">
+            <option value="">Bali, Indonesia</option>
+            <option value="">Jakarta, Indonesia</option>
+            <option value="">Yogyakarta, Indonesia</option>
+          </select>
+        </div>
+        <div class="search-item d-flex">
+          <label class="search-name" for="city">City</label>
+          <select class="list-item__tour" id="city">
+            <option>Prambanan</option>
+            <option>Ubud</option>
+            <option>Kuta</option>
+          </select>
+        </div>
+        <div class="search-item d-flex">
+          <label class="search-name" for="guest">Guest</label>
+          <select class="list-item__tour" id="guest">
+            <option>1 Person</option>
+            <option>2 Persons</option>
+            <option>8 Persons</option>
+          </select>
+        </div>
+        <button class="btn btn-search">
+          <i class="bx bx-search icon-search"></i>
+          Search
+        </button>
+      </section>
+
+      <section class="pages">
+        <div class="pages-list d-flex">
+          <div class="pages-items">
+            <img src="./imgs/indonesia.png" alt="Indonesia" />
+            <div class="pages-item__content d-flex">
+              <h2>Indonesia</h2>
+              <div class="pages-product d-flex">
+                <h4>$6,500</h4>
+                <span>9 days</span>
+              </div>
+            </div>
+          </div>
+          <div class="pages-items">
+            <img src="./imgs/thailand.png" alt="Thailand" />
+            <div class="pages-item__content d-flex">
+              <h2>Thiland</h2>
+              <div class="pages-product d-flex">
+                <h4>$6,500</h4>
+                <span>9 days</span>
+              </div>
+            </div>
+          </div>
+          <div class="pages-items">
+            <img src="./imgs/dubai2.png" alt="Dubai2" />
+            <div class="pages-item__content d-flex">
+              <h2>Dubai</h2>
+              <div class="pages-product d-flex">
+                <h4>$6,500</h4>
+                <span>9 days</span>
+              </div>
+            </div>
+          </div>
+          <div class="pages-items">
+            <img src="./imgs/maldives.png" alt="Maldives" />
+            <div class="pages-item__content d-flex">
+              <h2>Maldives</h2>
+              <div class="pages-product d-flex">
+                <h4>$6,500</h4>
+                <span>9 days</span>
+              </div>
+            </div>
+          </div>
+          <div class="pages-items">
+            <img src="./imgs/dubai.png" alt="Dubai" />
+            <div class="pages-item__content d-flex">
+              <h2>Dubai</h2>
+              <div class="pages-product d-flex">
+                <h4>$6,500</h4>
+                <span>9 days</span>
+              </div>
+            </div>
+          </div>
+          <div class="pages-items">
+            <img src="./imgs/bangladesh.png" alt="Bangladesh" />
+            <div class="pages-item__content d-flex">
+              <h2>Indonesia</h2>
+              <div class="pages-product d-flex">
+                <h4>$6,500</h4>
+                <span>9 days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
       <div class="container">
-        <div class="footer-columns d-flex">
-          <div class="column-link">
-            <h5>Resources</h5>
-            <ul class="column-items d-flex">
-              <li>
-                <a href="#!">Download </a>
-              </li>
-              <li>
-                <a href="#!">Help Center</a>
-              </li>
-              <li>
-                <a href="#!">Guide Book</a>
-              </li>
-              <li>
-                <a href="#!">App Directory</a>
-              </li>
-            </ul>
+        <div class="row">
+          <div class="footer-subcribe">
+            <div class="footer-subcribe__triagle">
+              <img src="./imgs/polygon-footer.svg" alt="polygon" />
+            </div>
+            <div class="footer-subcribe__content">
+              <h2>Subscribe our newsletter</h2>
+              <span>
+                Reciev latest news, update, and many other things
+                <br />
+                every week.
+              </span>
+              <form>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter Your email address"
+                />
+                <button class="btn-send">
+                  <i class="bx bx-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="footer-subcribe__circle">
+              <img src="./imgs/ellipse.png" alt="ellipse" />
+            </div>
           </div>
-          <div class="column-link">
-            <h5>Travellers</h5>
-            <ul class="column-items flex">
-              <li>
-                <a href="#!">Why Travellers </a>
-              </li>
-              <li>
-                <a href="#!">Enterprice</a>
-              </li>
-              <li>
-                <a href="#!">Customer Stories</a>
-              </li>
-              <li>
-                <a href="#!">Instagram post</a>
-              </li>
-            </ul>
+
+          <div class="footer-columns d-flex">
+            <div class="column-link">
+              <h5>Resources</h5>
+              <ul class="column-items d-flex">
+                <li>
+                  <a href="#!">Download </a>
+                </li>
+                <li>
+                  <a href="#!">Help Center</a>
+                </li>
+                <li>
+                  <a href="#!">Guide Book</a>
+                </li>
+                <li>
+                  <a href="#!">App Directory</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column-link">
+              <h5>Travellers</h5>
+              <ul class="column-items flex">
+                <li>
+                  <a href="#!">Why Travellers </a>
+                </li>
+                <li>
+                  <a href="#!">Enterprice</a>
+                </li>
+                <li>
+                  <a href="#!">Customer Stories</a>
+                </li>
+                <li>
+                  <a href="#!">Instagram post</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column-link">
+              <h5>Company</h5>
+              <ul class="column-items flex">
+                <li>
+                  <a href="#!">Travelling </a>
+                </li>
+                <li>
+                  <a href="#!">About Locato</a>
+                </li>
+                <li>
+                  <a href="#!">Success</a>
+                </li>
+                <li>
+                  <a href="#!">Information</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column-link">
+              <h5>Get in Touch</h5>
+              <ul class="column-items d-flex">
+                <li>
+                  <a href="#!"
+                    >Feel free to get in touch with <br />
+                    us vai email</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:email@gmail.com">email@gmail.com</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="column-link">
-            <h5>Company</h5>
-            <ul class="column-items flex">
-              <li>
-                <a href="#!">Travelling </a>
-              </li>
-              <li>
-                <a href="#!">About Locato</a>
-              </li>
-              <li>
-                <a href="#!">Success</a>
-              </li>
-              <li>
-                <a href="#!">Information</a>
-              </li>
-            </ul>
-          </div>
-          <div class="column-link">
-            <h5>Get in Touch</h5>
-            <ul class="column-items d-flex">
-              <li>
-                <a href="#!"
-                  >Feel free to get in touch with <br />
-                  us vai email</a
-                >
-              </li>
-              <li>
-                <a href="mailto:email@gmail.com">email@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom d-flex">
-          <div class="footer-logo">
+          <div class="footer-bottom d-flex">
             <a href="#">
-              <img src="./imgs/logo.png" alt="logo" />
+              <div class="footer-logo d-flex">
+                <img src="./imgs/logo.png" alt="logo" />
+                <p>Safe Tour <span>.</span></p>
+              </div>
             </a>
-          </div>
-          <ul class="footer-nav d-flex">
-            <li>
-              <a href="/home.html">Home</a>
-            </li>
-            <li>
-              <a href="/about.html">About</a>
-            </li>
-            <li>
-              <a href="/destinations.html">Destinations</a>
-            </li>
-            <li>
-              <a href="#">Tours</a>
-            </li>
-            <li>
-              <a href="/blog.html">Blog</a>
-            </li>
-          </ul>
-          <div class="footer-social d-flex">
-            <div class="footer-social__item">
-              <a href="#!">
-                <i class="bx bxl-facebook"></i>
-              </a>
-            </div>
-            <div class="footer-social__item">
-              <a href="#!">
-                <i class="bx bxl-instagram-alt"></i>
-              </a>
-            </div>
-            <div class="footer-social__item">
-              <a href="#!">
-                <i class="bx bxl-twitter"></i>
-              </a>
+            <ul class="footer-nav d-flex">
+              <li>
+                <a href="/home.html">Home</a>
+              </li>
+              <li>
+                <a href="/about.html">About</a>
+              </li>
+              <li>
+                <a href="/destinations.html">Destinations</a>
+              </li>
+              <li>
+                <a href="#">Tours</a>
+              </li>
+              <li>
+                <a href="/blog.html">Blog</a>
+              </li>
+            </ul>
+            <div class="footer-social d-flex">
+              <div class="footer-social__item">
+                <a href="#!">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </div>
+              <div class="footer-social__item">
+                <a href="#!">
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+              </div>
+              <div class="footer-social__item">
+                <a href="#!">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
