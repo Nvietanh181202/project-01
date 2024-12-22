@@ -96,9 +96,13 @@
             margin-top: 16px;
         }
 
-        .blog-items:hover {
-            transform: translateY(-10px);
+        .blog-items {
+            transition: all ease-in-out .3s;
+            &:hover {
+                transform: translateY(-10px);
+            }
         }
+
     }
 
 }

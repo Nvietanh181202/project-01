@@ -11,14 +11,75 @@
   .hero-achievement {
     display: none;
   }
+  .tour-list {
+    gap: 20px;
+    justify-content: center;
+  }
+  .tour-type .type-list {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 768px) {
-  .hide-on-moblile {
+  .hide-on-mobile {
     display: none;
   }
 
-  .hero {
+  .hero-introduct {
+    margin-top: 40px;
+  }
+
+  .search-list {
+    width: 335px;
+    height: 324px;
     flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+  }
+
+  .tour-trending .btn-list {
+    padding-top: 30px;
+  }
+
+  .btn-des {
+    margin-top: 30px;
+  }
+
+  .destination-list.item:nth-child(1) {
+    grid-column: span 5;
+  }
+
+  .destination-list .item:nth-child(2) {
+    grid-column: span 7;
+    grid-row: span 2;
+  }
+
+  .destination-list .item:nth-child(3) {
+    grid-column: span 12;
+  }
+
+  .destination-list .item:nth-child(4) {
+    grid-column: span 5;
+    grid-row: 2 / 3;
+  }
+
+  .destination-list .item:nth-child(5) {
+    grid-column: span 5;
+  }
+
+  .destination-list .item:nth-child(6) {
+    grid-column: span 7;
+  }
+  .tour-type .type-list {
+    justify-content: center;
+  }
+
+  .our-tour__info,
+  .trending-info,
+  .destination-info {
+    padding: 0 10px;
+  }
+  .out-tour__content {
+    margin-bottom: 30px;
   }
 }
