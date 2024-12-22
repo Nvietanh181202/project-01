@@ -58,6 +58,16 @@
     padding-bottom: 40px;
     margin-top: 140px;
   }
+
+  .column-link {
+    .mailto {
+      color: #31C3E0;
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    }
+  }
   
   .column-link h5 {
     color: #020000;
@@ -72,6 +82,7 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 23px;
+    align-items: start;
   }
   
   .column-items a {

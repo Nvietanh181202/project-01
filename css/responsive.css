@@ -8,6 +8,13 @@
   .hide-on-tablet {
     display: none;
   }
+  body {
+    padding: 0 20px;
+  }
+
+  .nav-bar__btn {
+    display: block;
+  }
   .hero-achievement {
     display: none;
   }
@@ -74,12 +81,17 @@
     justify-content: center;
   }
 
-  .our-tour__info,
-  .trending-info,
-  .destination-info {
-    padding: 0 10px;
-  }
   .out-tour__content {
     margin-bottom: 30px;
+  }
+  .testimonial-content {
+    margin-top: 56px;
+  }
+  .footer-bottom,
+  .footer-nav {
+    flex-direction: column;
+  }
+  .footer-nav {
+    padding-top: 30px;
   }
 }
