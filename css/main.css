@@ -453,13 +453,6 @@ Quy ước class
   background-color: rgba(0, 0, 0, 0.03);
 }
 
-.main-about {
-  background: url(/imgs/banner-about.png) center/cover no-repeat;
-  max-width: 100vw;
-  height: 800px;
-  width: 100%;
-}
-
 .main-destinations {
   background: url(/imgs/header-destinations.png) center/cover no-repeat;
   width: 100vw;
@@ -475,14 +468,12 @@ Quy ước class
   margin-top: 6px;
 }
 
-.main-about,
 .main-destinations {
   position: absolute;
   top: 0;
   left: 0;
   padding: 0;
 }
-.main-about span,
 .main-destinations span {
   color: #FF7B29;
   text-align: center;
@@ -1321,6 +1312,27 @@ Quy ước class
   line-height: 1.4rem;
   padding-top: 51px;
   display: block;
+}
+
+.main-about img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 800px;
+  width: 100%;
+}
+.main-about span {
+  color: #FF7B29;
+  text-align: center;
+  font-size: 13.6rem;
+  font-weight: 700;
+  position: absolute;
+  top: 23px;
+  right: 686px;
+  line-height: 15rem;
+  display: block;
+  margin-top: 300px;
 }
 
 .operator {

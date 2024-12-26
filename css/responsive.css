@@ -38,6 +38,11 @@
     flex-direction: column;
     gap: 30px;
   }
+
+  .main-about span {
+    top: 23px;
+    right: 183px;
+  }
 }
 
 @media (max-width: 768px) {

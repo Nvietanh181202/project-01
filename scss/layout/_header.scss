@@ -39,13 +39,7 @@
     background-color: rgba(0, 0, 0, 0.03);
 }
 
-.main-about {
-    background: url(/imgs/banner-about.png) center/cover no-repeat ;
-    max-width: 100vw;
-    height: 800px;
-    width: 100%;
-   
-}
+
 
 .main-destinations {
     background: url(/imgs/header-destinations.png) center/cover no-repeat ;
@@ -62,7 +56,6 @@
     }
 }
 
-.main-about,
 .main-destinations {
     position: absolute;
     top: 0;
