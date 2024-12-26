@@ -1405,6 +1405,39 @@ Quy ước class
   font-size: 1.8rem;
 }
 
+.main-destinations img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 800px;
+  width: 100%;
+}
+.main-destinations span {
+  color: #FF7B29;
+  text-align: center;
+  font-size: 13.6rem;
+  font-weight: 700;
+  position: absolute;
+  top: 1%;
+  right: 23%;
+  line-height: 15rem;
+  display: block;
+  margin-top: 300px;
+}
+.main-destinations h4 {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 58%;
+  right: 42%;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  margin-top: 6px;
+}
+
 .destinations-list {
   width: 100%;
   flex-wrap: wrap;
