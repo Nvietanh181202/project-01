@@ -670,6 +670,14 @@
         align-items: start;
         flex-wrap: wrap;
         gap: 24px;
+        .guildings-left {
+            min-width: 542px;
+            .guildings-left__img{
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
     .left-content {
         .left-content__info {

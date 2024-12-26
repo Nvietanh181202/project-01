@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
   </head>
   <body>
     <header class="header d-flex">
@@ -66,7 +67,7 @@
             </div>
           </section>
 
-          <section class="our-tour__choose d-flex">
+          <section class="our-tour__choose hide-on-mobile d-flex">
             <div class="tour-choose__img">
               <img src="./imgs/image-4.png" alt="Choose us" />
             </div>
@@ -129,63 +130,73 @@
               <h2>Meet our tour guides</h2>
             </div>
             <div class="tour-guides__list d-flex">
-              <div class="tour-guides__item">
-                <img src="./imgs/about-imgs2.png" alt="Tour Guides" />
-                <div class="guides-item__content d-flex">
-                  <div class="guides-content__info">
-                    <h6>Hasan Ahmed</h6>
-                    <span>Adventure master</span>
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="tour-guides__item">
+                      <img src="./imgs/about-imgs2.png" alt="Tour Guides" />
+                      <div class="guides-item__content d-flex">
+                        <div class="guides-content__info">
+                          <h6>Hasan Ahmed</h6>
+                          <span>Adventure master</span>
+                        </div>
+                        <div class="guides-content__social">
+                          <a href="#!">
+                            <i class="bx bxl-facebook"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="bx bxl-twitter"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="bx bxl-instagram"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="guides-content__social">
-                    <a href="#!">
-                      <i class="bx bxl-facebook"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="bx bxl-twitter"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="bx bxl-instagram"></i>
-                    </a>
+                  <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="tour-guides__item">
+                      <img src="./imgs/about-imgs3.png" alt="Tour Guides" />
+                      <div class="guides-item__content d-flex">
+                        <div class="guides-content__info">
+                          <h6>Mosqur Alam</h6>
+                          <span>Adventure master</span>
+                        </div>
+                        <div class="guides-content__social">
+                          <a href="#!">
+                            <i class="bx bxl-facebook"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="bx bxl-twitter"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="bx bxl-instagram"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="tour-guides__item">
-                <img src="./imgs/about-imgs3.png" alt="Tour Guides" />
-                <div class="guides-item__content d-flex">
-                  <div class="guides-content__info">
-                    <h6>Mosqur Alam</h6>
-                    <span>Adventure master</span>
-                  </div>
-                  <div class="guides-content__social">
-                    <a href="#!">
-                      <i class="bx bxl-facebook"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="bx bxl-twitter"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="bx bxl-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="tour-guides__item">
-                <img src="./imgs/about-imgs4.png" alt="Tour Guides" />
-                <div class="guides-item__content d-flex">
-                  <div class="guides-content__info">
-                    <h6>Foysal Khan</h6>
-                    <span>Adventure master</span>
-                  </div>
-                  <div class="guides-content__social">
-                    <a href="#!">
-                      <i class="bx bxl-facebook"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="bx bxl-twitter"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="bx bxl-instagram"></i>
-                    </a>
+                  <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="tour-guides__item">
+                      <img src="./imgs/about-imgs4.png" alt="Tour Guides" />
+                      <div class="guides-item__content d-flex">
+                        <div class="guides-content__info">
+                          <h6>Foysal Khan</h6>
+                          <span>Adventure master</span>
+                        </div>
+                        <div class="guides-content__social">
+                          <a href="#!">
+                            <i class="bx bxl-facebook"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="bx bxl-twitter"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="bx bxl-instagram"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -197,7 +208,7 @@
 
     <footer>
       
-          <div class="footer-subcribe">
+          <div class="footer-subcribe hide-on-tablet">
             <div class="footer-subcribe__triagle">
               <img src="./imgs/polygon-footer.svg" alt="polygon" />
             </div>
@@ -225,71 +236,85 @@
             </div>
           </div>
 
-          <div class="footer-columns d-flex">
-            <div class="column-link">
-              <h5>Resources</h5>
-              <ul class="column-items d-flex">
-                <li>
-                  <a href="#!">Download </a>
-                </li>
-                <li>
-                  <a href="#!">Help Center</a>
-                </li>
-                <li>
-                  <a href="#!">Guide Book</a>
-                </li>
-                <li>
-                  <a href="#!">App Directory</a>
-                </li>
-              </ul>
-            </div>
-            <div class="column-link">
-              <h5>Travellers</h5>
-              <ul class="column-items flex">
-                <li>
-                  <a href="#!">Why Travellers </a>
-                </li>
-                <li>
-                  <a href="#!">Enterprice</a>
-                </li>
-                <li>
-                  <a href="#!">Customer Stories</a>
-                </li>
-                <li>
-                  <a href="#!">Instagram post</a>
-                </li>
-              </ul>
-            </div>
-            <div class="column-link">
-              <h5>Company</h5>
-              <ul class="column-items flex">
-                <li>
-                  <a href="#!">Travelling </a>
-                </li>
-                <li>
-                  <a href="#!">About Locato</a>
-                </li>
-                <li>
-                  <a href="#!">Success</a>
-                </li>
-                <li>
-                  <a href="#!">Information</a>
-                </li>
-              </ul>
-            </div>
-            <div class="column-link">
-              <h5>Get in Touch</h5>
-              <ul class="column-items d-flex">
-                <li>
-                  <a href="#!"
-                    >Feel free to get in touch with <br />
-                    us vai email</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:email@gmail.com">email@gmail.com</a>
-                </li>
-              </ul>
+          <div class="footer-columns">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                  <div class="column-link">
+                    <h5>Resources</h5>
+                    <ul class="column-items d-flex">
+                      <li>
+                        <a href="#!">Download </a>
+                      </li>
+                      <li>
+                        <a href="#!">Help Center</a>
+                      </li>
+                      <li>
+                        <a href="#!">Guide Book</a>
+                      </li>
+                      <li>
+                        <a href="#!">App Directory</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                  <div class="column-link">
+                    <h5>Travellers</h5>
+                    <ul class="column-items flex">
+                      <li>
+                        <a href="#!">Why Travellers </a>
+                      </li>
+                      <li>
+                        <a href="#!">Enterprice</a>
+                      </li>
+                      <li>
+                        <a href="#!">Customer Stories</a>
+                      </li>
+                      <li>
+                        <a href="#!">Instagram post</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                  <div class="column-link">
+                    <h5>Company</h5>
+                    <ul class="column-items flex">
+                      <li>
+                        <a href="#!">Travelling </a>
+                      </li>
+                      <li>
+                        <a href="#!">About Locato</a>
+                      </li>
+                      <li>
+                        <a href="#!">Success</a>
+                      </li>
+                      <li>
+                        <a href="#!">Information</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                  <div class="column-link">
+                    <h5>Get in Touch</h5>
+                    <ul class="column-items d-flex">
+                      <li>
+                        <a href="#!"
+                          >Feel free to get in touch with <br />
+                          us vai email</a
+                        >
+                      </li>
+                      <li>
+                        <a class="mailto" href="mailto:email@gmail.com"
+                          >email@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="footer-bottom d-flex">

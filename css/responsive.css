@@ -25,6 +25,19 @@
   .tour-type .type-list {
     padding: 0 20px;
   }
+  .testimonial-content {
+    margin-top: 60px;
+  }
+  .guidings-right__list {
+    margin-top: 24px;
+  }
+
+  /* About responsive */
+  .operator,
+  .our-tour__choose {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -83,9 +96,6 @@
 
   .out-tour__content {
     margin-bottom: 30px;
-  }
-  .testimonial-content {
-    margin-top: 56px;
   }
   .footer-bottom,
   .footer-nav {

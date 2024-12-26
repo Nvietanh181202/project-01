@@ -1,5 +1,10 @@
 .operator {
     margin-top: 940px;
+    .operator-img {
+        img {
+            width: 100%;
+        }
+    }
     .operator-content{
         h4 {
             color: $color-1;
@@ -39,6 +44,12 @@
     }
     .tour-guides__list {
         margin-top: 60px;
+        .tour-guides__item{
+            min-width: 370px;
+            img {
+                width: 100%;
+            }
+        }
         .guides-item__content {
             padding-top: 20px;
             .guides-content__info {
