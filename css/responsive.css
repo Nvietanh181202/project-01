@@ -12,7 +12,7 @@
     padding: 0 20px;
   }
 
-  .nav-bar__btn {
+  .header .header-btn .nav-bar__btn {
     display: block;
   }
   .hero-achievement {
@@ -54,6 +54,13 @@
     margin-top: 40px;
   }
 
+  .nav-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .search-list {
     width: 335px;
     height: 324px;
@@ -70,7 +77,7 @@
     margin-top: 30px;
   }
 
-  .destination-list.item:nth-child(1) {
+  .destination-list .item:nth-child(1) {
     grid-column: span 5;
   }
 
@@ -95,6 +102,7 @@
   .destination-list .item:nth-child(6) {
     grid-column: span 7;
   }
+
   .tour-type .type-list {
     justify-content: center;
   }

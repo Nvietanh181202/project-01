@@ -438,10 +438,17 @@ Quy ước class
 .header .header-logo p span {
   color: #FF7B29;
 }
-.header .nav-bar__btn {
+.header .header-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.header .header-btn .nav-bar__btn {
   font-size: 2.6rem;
-  color: #fff;
+  color: #000;
   display: none;
+  cursor: pointer;
 }
 
 .nav-overlay {
@@ -450,7 +457,44 @@ Quy ước class
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.08);
+  display: none;
+}
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 320px;
+  max-width: 100%;
+  transform: translateX(150%);
+  transition: all ease-in-out 0.3s;
+}
+.nav-mobile .nav-mobile__close {
+  font-size: 3rem;
+  position: absolute;
+  top: 7px;
+  right: 33px;
+  color: #666;
+  cursor: pointer;
+}
+.nav-mobile ul li {
+  display: block;
+  margin: 30px;
+}
+.nav-mobile ul li a {
+  font-size: 1.8rem;
+  padding: 18px 12px;
+}
+
+.nav-input:checked ~ .nav-overlay {
+  display: block;
+}
+
+.nav-input:checked ~ .nav-mobile {
+  transform: translateX(0%);
 }
 
 .main-destinations {
@@ -850,6 +894,9 @@ Quy ước class
 .our-tour__list {
   margin-top: 30px;
 }
+.our-tour__list .our-tour__item {
+  margin-top: 10px;
+}
 .our-tour__list .our-tour__item .tour-content {
   padding: 20px 28px 0;
   border-radius: 0px 0px 12px 12px;
@@ -1089,6 +1136,10 @@ Quy ước class
 .destination-list .destination-item {
   position: relative;
 }
+.destination-list .destination-item .destination-item__img {
+  width: 100%;
+  height: 100%;
+}
 .destination-list .destination-item .destination-item__img img {
   width: 100%;
   height: 100%;
@@ -1255,9 +1306,6 @@ Quy ước class
   align-items: start;
   flex-wrap: wrap;
   gap: 24px;
-}
-.guidings .guidings-content .guildings-left {
-  min-width: 542px;
 }
 .guidings .guidings-content .guildings-left .guildings-left__img img {
   width: 100%;
@@ -1642,11 +1690,12 @@ Quy ước class
   letter-spacing: 0.18px;
 }
 
-.header-btn {
+.header-btn__contact {
   border-radius: 8px;
   background-color: #31C3E0;
+  order: 2;
 }
-.header-btn a {
+.header-btn__contact a {
   color: #fff;
   font-size: 1.4rem;
   font-weight: 500;

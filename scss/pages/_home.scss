@@ -213,6 +213,7 @@
 .our-tour__list {
     margin-top: 30px;
     .our-tour__item {
+        margin-top: 10px;
         .tour-content {
             padding: 20px 28px 0;
             border-radius: 0px 0px 12px 12px;
@@ -485,6 +486,8 @@
         // height: auto;
         position: relative;
         .destination-item__img {
+            width: 100%;
+            height: 100%;
             img{
                 width: 100%;
                 height: 100%;
@@ -671,7 +674,6 @@
         flex-wrap: wrap;
         gap: 24px;
         .guildings-left {
-            min-width: 542px;
             .guildings-left__img{
                 img {
                     width: 100%;

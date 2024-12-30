@@ -32,9 +32,10 @@
     }
 }
 
-.header-btn {
+.header-btn__contact {
     border-radius: 8px;
     background-color: $color-2;
+    order: 2;
     a {
         color: #fff;
         font-size: 1.4rem;

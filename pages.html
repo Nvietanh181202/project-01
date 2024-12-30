@@ -38,9 +38,40 @@
             </li>
           </ul>
         </nav>
-        <div class="btn header-btn">
-          <a href="#!">Contact us</a>
+        <div class="header-btn">
+          <div class="btn header-btn__contact">
+            <a href="#!">Contact us</a>
+          </div>
+          <label for="nav-mobile__input" class="nav-bar__btn">
+            <i class="bx bx-menu"></i>
+          </label>
         </div>
+  
+        <input type="checkbox" hidden class="nav-input" id="nav-mobile__input" />
+  
+        <label for="nav-mobile__input" class="nav-overlay"></label>
+        <nav class="nav-mobile d-xxl-one">
+          <label for="nav-mobile__input" class="nav-mobile__close d-xxl-one">
+            <i class="bx bx-x"></i>
+          </label>
+          <ul>
+            <li>
+              <a href="/home.html">Home</a>
+            </li>
+            <li>
+              <a href="/about.html">About</a>
+            </li>
+            <li>
+              <a href="/destinations.html">Destinations</a>
+            </li>
+            <li>
+              <a href="/blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -147,7 +178,7 @@
 
     <footer>
       
-          <div class="footer-subcribe">
+          <div class="footer-subcribe hide-on-tablet">
             <div class="footer-subcribe__triagle">
               <img src="./imgs/polygon-footer.svg" alt="polygon" />
             </div>

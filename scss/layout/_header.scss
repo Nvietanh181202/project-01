@@ -22,11 +22,19 @@
         }
     }
 
-    .nav-bar__btn {
-        font-size: 2.6rem;
-        color: #fff;
-        display: none;
+    .header-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .nav-bar__btn {
+            font-size: 2.6rem;
+            color: #000;
+            display: none;
+            cursor: pointer;
+        }
     }
+
 
 }
 
@@ -36,9 +44,45 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: rgba(0, 0, 0, 0.08);
+    display: none;
 }
 
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 320px;
+    max-width: 100%;
+    transform: translateX(150%);
+    transition: all ease-in-out .3s;
+    .nav-mobile__close {
+        font-size: 3rem;
+        position: absolute;
+        top: 7px ;
+        right: 33px;
+        color: #666;
+        cursor: pointer;
+    }
+    ul li {
+        display: block;
+        margin: 30px;
+        a {
+            font-size: 1.8rem;
+            padding: 18px 12px;
+        }
+    }
+}
+
+.nav-input:checked ~ .nav-overlay {
+    display: block;
+}
+
+.nav-input:checked ~ .nav-mobile {
+    transform: translateX(0%);
+}
 
 .main-destinations {
     background: url(/imgs/header-destinations.png) center/cover no-repeat ;
